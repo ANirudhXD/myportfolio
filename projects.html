@@ -6,7 +6,7 @@
 
     <meta
       name="description"
-      content="Personal projects by Anirudh Madhamshetty across DevOps, SRE, cloud automation, and reliability engineering experiments."
+      content="Side projects by Anirudh Madhamshetty — Cloud Snooze (intelligent infra cost control) and a self-hosted Personal Chatbot built from scratch."
     />
     <meta
       name="keywords"
@@ -16,7 +16,7 @@
     <meta property="og:title" content="Anirudh | Personal Projects" />
     <meta
       property="og:description"
-      content="Personal projects and learning experiments by Anirudh Madhamshetty with links, diagrams, and implementation write-ups."
+      content="Side projects by Anirudh Madhamshetty — Cloud Snooze (intelligent infra cost control) and a self-hosted Personal Chatbot built from scratch."
     />
     <meta
       property="og:image"
@@ -53,72 +53,95 @@
 
     <main>
       <section>
-        <h1>Personal Projects</h1>
+        <h1>Side Projects</h1>
         <p class="page-intro">
-          Independent engineering projects focused on production reliability,
-          automation quality, and measurable outcomes.
+          Personal engineering projects I build to explore ideas, sharpen skills,
+          and solve problems I actually care about. Real tools, real constraints.
         </p>
 
         <div class="projects-grid projects-grid-2col">
+
+          <!-- =============================== PROJECT 1 =============================== -->
           <article class="project-card reveal-card">
             <div class="project-header">
-              <h2>Project 01 · K8s Reliability Sandbox</h2>
-              <div class="tech-tags">
-                <span class="tag">Kubernetes</span>
-                <span class="tag">Helm</span>
-                <span class="tag">Prometheus</span>
-                <span class="tag">Grafana</span>
-                <span class="tag">Alertmanager</span>
+              <div>
+                <h2>Cloud Snooze</h2>
+                <p class="role-title">Intelligent infra scaling · Cloud cost control</p>
               </div>
+              <span class="cert-status in-progress">In Progress</span>
             </div>
-            <p class="project-desc">
-              Built a reproducible reliability lab to validate probe tuning,
-              rollout safety, and incident visibility before applying similar
-              patterns in production environments.
-            </p>
-            <p class="project-outcome">🎯 Outcome: Reduced false-positive alerts by 43% and cut recovery drill time from 22m to 9m in test scenarios.</p>
+
+            <div class="tech-tags" style="margin-bottom: 12px;">
+              <span class="tag">Python</span>
+              <span class="tag">GCP</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">FinOps</span>
+              <span class="tag">Automation</span>
+            </div>
+
+            <p class="project-desc"><strong>Problem:</strong> Cloud resources keep running at full capacity during off-peak hours — idle VMs, scaled-out clusters, and always-on databases drain budget around the clock even when traffic has cooled off.</p>
+            <p class="project-desc">A cloud-native scheduler that monitors traffic signals and resource utilisation across GCP and Azure, then intelligently scales down VMs, GKE node pools, and managed databases during quiet windows — and pre-emptively scales them back up ahead of demand.</p>
 
             <ul class="project-highlights">
-              <li>Built a repeatable failure simulation workflow for rollout and probe validation.</li>
-              <li>Tuned SLO-driven alerting to lower alert fatigue during controlled incidents.</li>
-              <li>Standardized baseline dashboards for service health and response readiness.</li>
+              <li>Unified policy engine covering VMs, GKE clusters, and managed databases across cloud providers.</li>
+              <li>Pre-emptive scale-up driven by predicted traffic ramp — not reactive to spikes.</li>
+              <li>Configurable cool-off thresholds, exclusion rules, and schedule overrides per resource type.</li>
             </ul>
 
+            <p class="project-outcome">&#127919; Outcome: <em>Cost reduction data to be added once measured in real environment.</em></p>
+
             <details class="project-attachments">
-              <summary>Attachments</summary>
-              <p>Add diagrams, screenshots, repository links, and notes here.</p>
+              <summary>Repository &amp; Artifacts</summary>
+              <ul class="artifact-template-list">
+                <li>&#128279; GitHub — <em>link to be added on publish</em></li>
+                <li>&#128444; Architecture diagram — <em>to be added</em></li>
+                <li>&#128202; Cost savings breakdown — <em>to be added</em></li>
+              </ul>
             </details>
           </article>
 
+          <!-- =============================== PROJECT 2 =============================== -->
           <article class="project-card reveal-card">
             <div class="project-header">
-              <h2>Project 02 · Cloud Cost Guardrail Bot</h2>
-              <div class="tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Cloud APIs</span>
-                <span class="tag">Automation</span>
-                <span class="tag">FinOps</span>
-                <span class="tag">Policy Engine</span>
+              <div>
+                <h2>Personal Chatbot</h2>
+                <p class="role-title">Self-hosted AI assistant · Built from scratch</p>
               </div>
+              <span class="cert-status in-progress">In Progress</span>
             </div>
-            <p class="project-desc">
-              Implemented a policy-based cost watchdog that detects spend drift,
-              flags idle resources, and sends corrective recommendations before
-              monthly budget thresholds are breached.
-            </p>
-            <p class="project-outcome">🎯 Outcome: Identified 17% potential monthly cost reduction in a sample environment through idle-compute and orphaned-resource detection.</p>
+
+            <div class="tech-tags" style="margin-bottom: 12px;">
+              <span class="tag">Python</span>
+              <span class="tag">LLM</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">GitHub Pages</span>
+              <span class="tag">GitHub Actions</span>
+            </div>
+
+            <p class="project-desc"><strong>Problem:</strong> Wanted a personal AI assistant that is fully self-hosted, customisable, and not locked into any third-party chat product or subscription.</p>
+            <p class="project-desc">Built a chatbot from the ground up — custom frontend, a lightweight backend API, and pluggable LLM support — hosted entirely on personal GitHub infrastructure with no external platform dependencies.</p>
 
             <ul class="project-highlights">
-              <li>Created daily policy scans for utilization, TTL, and tag compliance checks.</li>
-              <li>Ranked recommendations by estimated savings and ownership confidence.</li>
-              <li>Designed a simple action queue to make weekly optimization cycles consistent.</li>
+              <li>Custom chat UI with conversation history, context retention, and clean mobile layout.</li>
+              <li>Pluggable LLM backend — swap models without touching the interface layer.</li>
+              <li>Fully self-hosted on GitHub Pages + Actions — zero runtime cost, full ownership.</li>
             </ul>
 
+            <p class="project-outcome">&#127919; Outcome: <em>Performance and usage metrics to be added.</em></p>
+
             <details class="project-attachments">
-              <summary>Attachments</summary>
-              <p>Add diagrams, screenshots, repository links, and notes here.</p>
+              <summary>Repository &amp; Artifacts</summary>
+              <ul class="artifact-template-list">
+                <li>&#128279; GitHub — <a href="https://github.com/ANirudhXD" target="_blank" rel="noopener noreferrer">github.com/ANirudhXD</a></li>
+                <li>&#128444; UI screenshot — <em>to be added</em></li>
+                <li>&#128221; Architecture write-up — <em>to be added</em></li>
+              </ul>
             </details>
           </article>
+
         </div>
       </section>
     </main>

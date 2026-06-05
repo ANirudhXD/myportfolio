@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Personal projects by Anirudh Madhamshetty across DevOps, SRE, cloud automation, and reliability engineering experiments."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, personal projects, devops, site reliability, cloud, Kubernetes, Terraform, automation"
+    />
+    <meta name="author" content="Anirudh Madhamshetty" />
+    <meta property="og:title" content="Anirudh | Personal Projects" />
+    <meta
+      property="og:description"
+      content="Personal projects and learning experiments by Anirudh Madhamshetty with links, diagrams, and implementation write-ups."
+    />
+    <meta
+      property="og:image"
+      content="https://anirudhxd.github.io/myportfolio/anirudh_profile_pic.jpg"
+    />
+    <meta property="og:url" content="https://anirudhxd.github.io/myportfolio/projects.html" />
+    <meta property="og:type" content="website" />
+
+    <title>ANIRUDH | Personal Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="./anirudh_profile_pic.jpg" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./anirudh_profile_pic.jpg"
+        alt="Anirudh Madhamshetty — DevOps and SRE Engineer"
+        height="90"
+        width="90"
+      />
+      <div>
+        <p class="site-name">Anirudh Madhamshetty</p>
+        <p class="site-role">DevOps | Site Reliability Engineer</p>
+        <span class="status-badge">Open to Opportunities</span>
+      </div>
+    </header>
+
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="work_ex.html">Work Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <section>
+        <h1>Personal Projects</h1>
+        <p class="page-intro">
+          Independent engineering projects focused on production reliability,
+          automation quality, and measurable outcomes.
+        </p>
+
+        <div class="projects-grid projects-grid-2col">
+          <article class="project-card reveal-card">
+            <div class="project-header">
+              <h2>Project 01 · K8s Reliability Sandbox</h2>
+              <div class="tech-tags">
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Helm</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Alertmanager</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              Built a reproducible reliability lab to validate probe tuning,
+              rollout safety, and incident visibility before applying similar
+              patterns in production environments.
+            </p>
+            <p class="project-outcome">🎯 Outcome: Reduced false-positive alerts by 43% and cut recovery drill time from 22m to 9m in test scenarios.</p>
+
+            <ul class="project-highlights">
+              <li>Built a repeatable failure simulation workflow for rollout and probe validation.</li>
+              <li>Tuned SLO-driven alerting to lower alert fatigue during controlled incidents.</li>
+              <li>Standardized baseline dashboards for service health and response readiness.</li>
+            </ul>
+
+            <details class="project-attachments">
+              <summary>Attachments</summary>
+              <p>Add diagrams, screenshots, repository links, and notes here.</p>
+            </details>
+          </article>
+
+          <article class="project-card reveal-card">
+            <div class="project-header">
+              <h2>Project 02 · Cloud Cost Guardrail Bot</h2>
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Cloud APIs</span>
+                <span class="tag">Automation</span>
+                <span class="tag">FinOps</span>
+                <span class="tag">Policy Engine</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              Implemented a policy-based cost watchdog that detects spend drift,
+              flags idle resources, and sends corrective recommendations before
+              monthly budget thresholds are breached.
+            </p>
+            <p class="project-outcome">🎯 Outcome: Identified 17% potential monthly cost reduction in a sample environment through idle-compute and orphaned-resource detection.</p>
+
+            <ul class="project-highlights">
+              <li>Created daily policy scans for utilization, TTL, and tag compliance checks.</li>
+              <li>Ranked recommendations by estimated savings and ownership confidence.</li>
+              <li>Designed a simple action queue to make weekly optimization cycles consistent.</li>
+            </ul>
+
+            <details class="project-attachments">
+              <summary>Attachments</summary>
+              <p>Add diagrams, screenshots, repository links, and notes here.</p>
+            </details>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+    <footer>
+      <p class="footer-mantra">" SINCERITY | ENDURANCE | RESILIENCE | PERSEVERANCE "</p>
+      <p class="footer-meta">© <span class="footer-year">2025</span> Anirudh Madhamshetty</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

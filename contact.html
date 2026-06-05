@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- optional for SEO -->
     <meta
       name="description"
       content="Get in touch with Anirudh Madhamshetty — DevOps & SRE Engineer."
@@ -23,12 +22,8 @@
       property="og:image"
       content="https://anirudhxd.github.io/myportfolio/anirudh_profile_pic.jpg"
     />
-    <meta
-      property="og:url"
-      content="https://anirudhxd.github.io/myportfolio/contact.html"
-    />
+    <meta property="og:url" content="https://anirudhxd.github.io/myportfolio/contact.html" />
     <meta property="og:type" content="website" />
-    <!-- optional for SEO -->
 
     <title>ANIRUDH | Contact</title>
     <link rel="stylesheet" href="style.css" />
@@ -36,34 +31,35 @@
   </head>
   <body>
     <header>
-      <img src="./anirudh_profile_pic.jpg" alt="Anirudh Madhamshetty — DevOps & SRE Engineer" height="90" width="90" />
+      <img
+        src="./anirudh_profile_pic.jpg"
+        alt="Anirudh Madhamshetty — DevOps and SRE Engineer"
+        height="90"
+        width="90"
+      />
       <div>
-        <div>
-          <h1 style="line-height: 0">Anirudh Madhamshetty</h1>
-        </div>
-        <p style="color: #fd6500;">
-          DevOps | Site Reliability Engineer
-        </p>
+        <p class="site-name">Anirudh Madhamshetty</p>
+        <p class="site-role">DevOps | Site Reliability Engineer</p>
         <span class="status-badge">Open to Opportunities</span>
       </div>
     </header>
 
-
-    <nav>
+    <nav aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="work_ex.html">Work Experience</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
+
     <main>
       <section id="contact">
-        <h1>Contact Me</h1>
+        <h1>Contact</h1>
         <p class="contact-intro">
-          Whether you're a recruiter, engineer, or just want to talk tech — I'm always happy to connect. Email or LinkedIn is the fastest way to reach me.
+          If you are hiring for DevOps or SRE roles, email or LinkedIn is the
+          fastest way to reach me.
         </p>
         <div class="contact-grid">
-
-          <a href="mailto:anirudhmadhamshetty@gmail.com" class="contact-card">
+          <a href="mailto:anirudhmadhamshetty@gmail.com" class="contact-card" aria-label="Email Anirudh">
             <span class="contact-icon">📧</span>
             <div>
               <span class="contact-label">Email</span>
@@ -71,7 +67,7 @@
             </div>
           </a>
 
-          <a href="tel:+919390181019" class="contact-card">
+          <a href="tel:+919390181019" class="contact-card" aria-label="Call Anirudh">
             <span class="contact-icon">📱</span>
             <div>
               <span class="contact-label">Phone</span>
@@ -79,7 +75,13 @@
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/in/anirudh-madhamshetty/" target="_blank" class="contact-card">
+          <a
+            href="https://www.linkedin.com/in/anirudh-madhamshetty/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+            aria-label="Open LinkedIn profile"
+          >
             <span class="contact-icon">💼</span>
             <div>
               <span class="contact-label">LinkedIn</span>
@@ -87,7 +89,13 @@
             </div>
           </a>
 
-          <a href="https://github.com/ANirudhXD" target="_blank" class="contact-card">
+          <a
+            href="https://github.com/ANirudhXD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+            aria-label="Open GitHub profile"
+          >
             <span class="contact-icon">🐙</span>
             <div>
               <span class="contact-label">GitHub</span>
@@ -95,7 +103,13 @@
             </div>
           </a>
 
-          <a href="https://leetcode.com/u/ANirudhXD/" target="_blank" class="contact-card">
+          <a
+            href="https://leetcode.com/u/ANirudhXD/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+            aria-label="Open LeetCode profile"
+          >
             <span class="contact-icon">🧩</span>
             <div>
               <span class="contact-label">LeetCode</span>
@@ -103,25 +117,28 @@
             </div>
           </a>
 
-          <a href="./Resume.pdf" target="_blank" class="contact-card">
+          <a
+            href="./Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+            aria-label="Download resume PDF"
+          >
             <span class="contact-icon">📄</span>
             <div>
               <span class="contact-label">Resume</span>
               <span class="contact-value">Download PDF</span>
             </div>
           </a>
-
         </div>
       </section>
     </main>
+
     <hr />
     <footer>
-      <p style="font-style: italic">
-        " SINCERITY | ENDURANCE | RESILIENCE | PERSEVERANCE "
-      </p>
-      <p style="font-size: 12px; color: #444; margin-top: 6px;">© <span class="footer-year">2025</span> Anirudh Madhamshetty</p>
+      <p class="footer-mantra">" SINCERITY | ENDURANCE | RESILIENCE | PERSEVERANCE "</p>
+      <p class="footer-meta">© <span class="footer-year">2025</span> Anirudh Madhamshetty</p>
     </footer>
     <script src="script.js"></script>
   </body>
 </html>
-

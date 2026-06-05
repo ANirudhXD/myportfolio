@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- optional for SEO -->
     <meta
       name="description"
-      content="Work experience and projects of Anirudh Madhamshetty — DevOps & SRE Engineer."
+      content="Work experience of Anirudh Madhamshetty — DevOps & SRE Engineer with measurable impact across cloud reliability, platform engineering, and automation."
     />
     <meta
       name="keywords"
@@ -17,7 +16,7 @@
     <meta property="og:title" content="Anirudh | Work Experience" />
     <meta
       property="og:description"
-      content="Work experience and projects of Anirudh Madhamshetty — DevOps & SRE Engineer."
+      content="Work experience of Anirudh Madhamshetty — DevOps & SRE Engineer with measurable impact across cloud reliability and automation."
     />
     <meta
       property="og:image"
@@ -25,54 +24,80 @@
     />
     <meta property="og:url" content="https://anirudhxd.github.io/myportfolio/work_ex.html" />
     <meta property="og:type" content="website" />
-    <!-- optional for SEO -->
 
-    
     <title>ANIRUDH | Work Experience</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/jpg" href="./anirudh_profile_pic.jpg" />
   </head>
   <body>
     <header>
-      <img src="./anirudh_profile_pic.jpg" alt="Anirudh Madhamshetty — DevOps & SRE Engineer" height="90" width="90" />
+      <img
+        src="./anirudh_profile_pic.jpg"
+        alt="Anirudh Madhamshetty — DevOps and SRE Engineer"
+        height="90"
+        width="90"
+      />
       <div>
-        <div>
-          <h1 style="line-height: 0">Anirudh Madhamshetty</h1>
-        </div>
-        <p style="color: #fd6500;">
-          DevOps | Site Reliability Engineer
-        </p>
+        <p class="site-name">Anirudh Madhamshetty</p>
+        <p class="site-role">DevOps | Site Reliability Engineer</p>
         <span class="status-badge">Open to Opportunities</span>
       </div>
     </header>
 
-    <nav>
+    <nav aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="work_ex.html">Work Experience</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
+
     <main>
       <section class="experience">
-        <h1>Experience</h1>
+        <h1>Work Experience</h1>
+        <p class="page-intro">
+          I focus on reliability engineering outcomes with clear ownership and
+          measurable results. Sensitive implementation details are intentionally
+          abstracted to respect company confidentiality.
+        </p>
 
-        <div class="role-card">
+        <article class="role-card">
           <div class="role-header">
             <div>
               <p class="company-name">NCR Atleos</p>
               <p class="role-title">Associate Software Engineer — DevOps & SRE</p>
             </div>
-            <span class="role-dates">July 2023 – Present · Hyderabad, India</span>
+            <span class="role-dates">Jul 2023 – Present · Hyderabad, India</span>
           </div>
+
           <ul class="role-bullets">
-            <li>Managed and maintained <strong>15+ production GKE clusters</strong>, sustaining <strong>99.8% uptime</strong> across critical financial services infrastructure — zero SLO breaches over the engagement.</li>
-            <li>Orchestrated <strong>200+ zero-downtime deployments</strong> via Jenkins CI/CD pipelines with Helm charts, integrating security scanning, smoke testing, and automated rollback across dev, staging, and production.</li>
-            <li>Built an <strong>enterprise observability platform from scratch</strong> — Prometheus, Grafana dashboards, and Alertmanager routing — reducing incident response time by <strong>60%</strong> with real-time SLO visibility.</li>
-            <li>Architected an <strong>OAuth 2.0 / Azure B2C identity solution</strong> serving <strong>21,000+ users</strong>, including a live migration from Okta with a 99.9% success rate and zero downtime.</li>
-            <li>Delivered <strong>35% cost reduction ($85K+ annually)</strong> through Terraform-managed infrastructure optimization, workload right-sizing, and cloud migration initiatives.</li>
-            <li>Developed <strong>25+ automation tools</strong> (PowerShell, Bash, Python) reducing manual operations by <strong>95%</strong>; achieved <strong>100% compliance</strong> in PCI-DSS and SOC2 Type II audits.</li>
+            <li>Managed <strong>15+ production GKE clusters</strong> and sustained <strong>99.8% uptime</strong> for critical financial workloads.</li>
+            <li>Orchestrated <strong>200+ zero-downtime deployments</strong> through Jenkins pipelines and Helm-based release flows.</li>
+            <li>Built an observability stack using Prometheus, Grafana, and Alertmanager and reduced incident response time by <strong>60%</strong>.</li>
+            <li>Led OAuth 2.0 and Azure B2C migration for <strong>21,000+ users</strong> with <strong>99.9% migration success</strong>.</li>
+            <li>Drove infrastructure optimization initiatives that delivered <strong>$85K+ annual savings</strong>.</li>
+            <li>Built <strong>25+ automation tools</strong> and supported audit readiness for PCI-DSS and SOC2 controls.</li>
           </ul>
-          <div class="tech-tags">
+
+          <div class="proof-grid">
+            <div class="evidence-card">
+              <span class="evidence-label">Context</span>
+              <span class="evidence-value">Multi-cluster, regulated financial environment with high uptime expectations.</span>
+            </div>
+            <div class="evidence-card">
+              <span class="evidence-label">Action</span>
+              <span class="evidence-value">Standardized deploy pipelines, observability baselines, and automation playbooks.</span>
+            </div>
+            <div class="evidence-card">
+              <span class="evidence-label">Ownership</span>
+              <span class="evidence-value">Production operations, release reliability, platform automation, and incident support.</span>
+            </div>
+            <div class="evidence-card">
+              <span class="evidence-label">Outcome</span>
+              <span class="evidence-value">99.8% uptime, 60% faster response, 200+ zero-downtime releases, $85K+ savings.</span>
+            </div>
+          </div>
+
+          <div class="tech-tags" aria-label="Technologies used at NCR Atleos">
             <span class="tag">Kubernetes</span>
             <span class="tag">GKE</span>
             <span class="tag">GCP</span>
@@ -89,115 +114,57 @@
             <span class="tag">Python</span>
             <span class="tag">Bash</span>
           </div>
-        </div>
+        </article>
 
-        <div class="role-card">
+        <article class="role-card">
           <div class="role-header">
             <div>
               <p class="company-name">Econ Systems</p>
               <p class="role-title">Research Intern</p>
             </div>
-            <span class="role-dates">Jan 2023 – June 2023 · Chennai, India</span>
+            <span class="role-dates">Jan 2023 – Jun 2023 · Chennai, India</span>
           </div>
+
           <ul class="role-bullets">
-            <li>Developed a real-time image stitching algorithm using OpenCV and ML-based homography estimation, achieving <strong>95% accuracy at 15 FPS</strong> for autonomous robotic navigation.</li>
+            <li>Developed a real-time image stitching pipeline using OpenCV and ML-based homography estimation.</li>
+            <li>Reached <strong>95% accuracy at 15 FPS</strong> for autonomous navigation use cases.</li>
           </ul>
-          <div class="tech-tags">
+
+          <div class="proof-grid">
+            <div class="evidence-card">
+              <span class="evidence-label">Context</span>
+              <span class="evidence-value">Vision pipeline for robotics where latency and stability both mattered.</span>
+            </div>
+            <div class="evidence-card">
+              <span class="evidence-label">Action</span>
+              <span class="evidence-value">Improved image alignment and homography quality across varied frames.</span>
+            </div>
+            <div class="evidence-card">
+              <span class="evidence-label">Outcome</span>
+              <span class="evidence-value">Operationally useful real-time performance at 15 FPS and 95% accuracy.</span>
+            </div>
+          </div>
+
+          <div class="tech-tags" aria-label="Technologies used at Econ Systems">
             <span class="tag">Python</span>
             <span class="tag">OpenCV</span>
             <span class="tag">Machine Learning</span>
             <span class="tag">Computer Vision</span>
           </div>
-        </div>
-      </section>
+        </article>
 
-      <section class="projects">
-        <h1>Key Projects</h1>
-        <div class="projects-grid">
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3>Observability Platform</h3>
-              <div class="tech-tags">
-                <span class="tag">Prometheus</span>
-                <span class="tag">Grafana</span>
-                <span class="tag">Alertmanager</span>
-                <span class="tag">GKE</span>
-              </div>
-            </div>
-            <p class="project-desc">Designed a full observability stack from the ground up for 15+ production clusters — custom scrape configs, recording rules, purpose-driven dashboards for SLO tracking, and intelligent alert routing to minimize on-call fatigue.</p>
-            <p class="project-outcome">📈 60% faster incident response · Zero SLO breaches</p>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3>Azure B2C Identity Solution</h3>
-              <div class="tech-tags">
-                <span class="tag">Azure B2C</span>
-                <span class="tag">OAuth 2.0</span>
-                <span class="tag">Okta</span>
-                <span class="tag">Azure Functions</span>
-                <span class="tag">Key Vault</span>
-              </div>
-            </div>
-            <p class="project-desc">Architected end-to-end OAuth 2.0 / OIDC identity flows from scratch — federation, MFA, progressive profiling, and conditional access. Led live migration from Okta for 21,000+ users across multiple applications.</p>
-            <p class="project-outcome">📈 21,000+ users migrated · 99.9% success rate · Zero downtime</p>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3>CI/CD Pipeline Automation</h3>
-              <div class="tech-tags">
-                <span class="tag">Jenkins</span>
-                <span class="tag">Helm</span>
-                <span class="tag">GKE</span>
-                <span class="tag">Docker</span>
-                <span class="tag">GitHub Actions</span>
-              </div>
-            </div>
-            <p class="project-desc">Built Jenkins pipelines for multi-environment microservices deployments using Helm charts — automated security scanning, smoke testing, and rollback stages ensuring consistency across dev, staging, and production.</p>
-            <p class="project-outcome">📈 200+ zero-downtime releases · Deployment time cut by 70%</p>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3>Infrastructure as Code — Multi-Cloud</h3>
-              <div class="tech-tags">
-                <span class="tag">Terraform</span>
-                <span class="tag">Ansible</span>
-                <span class="tag">GCP</span>
-                <span class="tag">Azure</span>
-                <span class="tag">AWS</span>
-              </div>
-            </div>
-            <p class="project-desc">Developed reusable Terraform modules and Ansible playbooks for provisioning GCP, Azure, and AWS infrastructure — version-controlled, repeatable environment setup with built-in security and cost controls.</p>
-            <p class="project-outcome">📈 80% faster provisioning · $85K+ annual savings</p>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3>Operational Automation Suite</h3>
-              <div class="tech-tags">
-                <span class="tag">PowerShell</span>
-                <span class="tag">Bash</span>
-                <span class="tag">Python</span>
-              </div>
-            </div>
-            <p class="project-desc">Built 25+ automation scripts covering user account management (10,000+ accounts), workload updates in lower environments, compliance reporting, and infrastructure health checks.</p>
-            <p class="project-outcome">📈 95% reduction in manual operations · PCI-DSS & SOC2 compliant</p>
-          </div>
-
-        </div>
+        <p class="section-note">
+          Detailed implementations are represented as sanitized summaries. See the
+          <a href="projects.html">Projects</a> page for personal project narratives and artifacts.
+        </p>
       </section>
     </main>
-    <hr/>
+
+    <hr />
     <footer>
-      <p style="font-style: italic">
-        " SINCERITY | ENDURANCE | RESILIENCE | PERSEVERANCE "
-      </p>
-      <p style="font-size: 12px; color: #444; margin-top: 6px;">© <span class="footer-year">2025</span> Anirudh Madhamshetty</p>
+      <p class="footer-mantra">" SINCERITY | ENDURANCE | RESILIENCE | PERSEVERANCE "</p>
+      <p class="footer-meta">© <span class="footer-year">2025</span> Anirudh Madhamshetty</p>
     </footer>
     <script src="script.js"></script>
   </body>
 </html>
-

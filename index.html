@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- optional for SEO -->
     <meta
       name="description"
-      content="Anirudh Madhamshetty — DevOps & SRE Engineer. 3 years building reliable cloud systems on GCP, Azure and Kubernetes. 99.8% uptime, $85K saved, 21K+ users served."
+      content="Anirudh Madhamshetty — DevOps & SRE Engineer. 3+ years building reliable cloud systems on GCP, Azure and Kubernetes. 99.8% uptime, $85K saved, 21K+ users served."
     />
     <meta
       name="keywords"
@@ -17,18 +16,37 @@
     <meta property="og:title" content="Anirudh | Home" />
     <meta
       property="og:description"
-      content="Anirudh Madhamshetty — DevOps & SRE Engineer. 3 years building reliable cloud systems on GCP, Azure and Kubernetes."
+      content="Anirudh Madhamshetty — DevOps & SRE Engineer. 3+ years building reliable cloud systems on GCP, Azure and Kubernetes."
     />
     <meta
       property="og:image"
       content="https://anirudhxd.github.io/myportfolio/anirudh_profile_pic.jpg"
     />
-    <meta
-      property="og:url"
-      content="https://anirudhxd.github.io/myportfolio/"
-    />
+    <meta property="og:url" content="https://anirudhxd.github.io/myportfolio/" />
     <meta property="og:type" content="website" />
-    <!-- optional for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Anirudh Madhamshetty",
+        "jobTitle": "DevOps & Site Reliability Engineer",
+        "url": "https://anirudhxd.github.io/myportfolio/",
+        "sameAs": [
+          "https://www.linkedin.com/in/anirudh-madhamshetty/",
+          "https://github.com/ANirudhXD",
+          "https://leetcode.com/u/ANirudhXD/"
+        ],
+        "knowsAbout": [
+          "Kubernetes",
+          "GCP",
+          "Azure",
+          "Terraform",
+          "Observability",
+          "DevOps",
+          "Site Reliability Engineering"
+        ]
+      }
+    </script>
 
     <title>ANIRUDH | Home</title>
     <link rel="stylesheet" href="style.css" />
@@ -36,41 +54,63 @@
   </head>
   <body>
     <header>
-      <img src="./anirudh_profile_pic.jpg" alt="Anirudh Madhamshetty — DevOps & SRE Engineer" height="90" width="90" />
+      <img
+        src="./anirudh_profile_pic.jpg"
+        alt="Anirudh Madhamshetty — DevOps and SRE Engineer"
+        height="90"
+        width="90"
+      />
       <div>
-        <div>
-          <h1 style="line-height: 0">Anirudh Madhamshetty</h1>
-        </div>
-        <p style="color: #fd6500;">
-          DevOps | Site Reliability Engineer
-        </p>
+        <p class="site-name">Anirudh Madhamshetty</p>
+        <p class="site-role">DevOps | Site Reliability Engineer</p>
         <span class="status-badge">Open to Opportunities</span>
       </div>
     </header>
 
-    <nav>
+    <nav aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="work_ex.html">Work Experience</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <main>
-      <section>
-        <h1>About me</h1>
-        <p>
-          I fall in love with everything I do — and DevOps is no exception. Over the past 3 years at NCR Atleos, I've built and scaled cloud infrastructure that keeps critical financial services running reliably across GCP, Azure, and Kubernetes. My approach is simple: understand the fundamentals before going deep, and never be afraid to unlearn and relearn when a better way exists.
-        </p>
-        <p>
-          What drives me isn't just keeping systems <del>boring</del> <ins>up always</ins> — it's building things that matter, automating the tedious so teams can focus on the creative, and leaving every system more observable, more resilient, and more efficient than I found it.
-        </p>
-        <div class="resume-cta">
-          <a href="./Resume.pdf" target="_blank" class="resume-btn">⬇ Download Resume</a>
-          <span style="color: #888; font-size: 13px;">or browse the sections below ↓</span>
+
+    <main class="home-main">
+      <section class="hero-panel">
+        <div>
+          <p class="eyebrow">DevOps & SRE Portfolio</p>
+          <h1>Building resilient systems that stay stable under pressure.</h1>
+          <p>
+            I am a DevOps and SRE engineer with 3+ years of experience building
+            and operating reliable platforms for financial services. My focus is
+            production reliability, practical automation, and systems that teams
+            can trust during high-pressure moments.
+          </p>
+          <p>
+            I enjoy combining infrastructure, observability, and identity systems
+            to solve real operational problems. I stay hands-on with fundamentals,
+            iterate continuously, and aim to leave every service more resilient,
+            measurable, and easier to operate.
+          </p>
+          <div class="resume-cta">
+            <a href="./Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn"
+              >⬇ Download Resume</a
+            >
+            <span class="cta-note">View experience, projects, and contact details below</span>
+          </div>
         </div>
+        <aside class="hero-side">
+          <h2>What I Bring</h2>
+          <ul class="hero-points">
+            <li>Production-first reliability mindset</li>
+            <li>Automation over repetitive operations</li>
+            <li>Strong cloud + Kubernetes ownership</li>
+            <li>Observability-led incident response</li>
+          </ul>
+        </aside>
       </section>
 
-      <section>
-        <h1>Impact at a Glance</h1>
+      <section class="impact-shell">
+        <h2>Impact at a Glance</h2>
         <div class="impact-banner">
           <div class="impact-stat">
             <span class="number">99.8%</span>
@@ -90,94 +130,80 @@
           </div>
           <div class="impact-stat">
             <span class="number">200+</span>
-            <span class="label">Zero-Downtime Deploys</span>
+            <span class="label">Zero-Downtime Deployments</span>
           </div>
         </div>
       </section>
-      <section>
-        <h1>Skills</h1>
-        <ul>
-          <li>
-            <span>Cloud & Infrastructure</span> Kubernetes, GCP, Azure, Ansible, Terraform.
-          </li>
-          <li>
-            <span>CI/CD & Containers</span> Jenkins, GitHub Actions, Docker, Helm.
-          </li>
-          <li>
-            <span>Languages & Scripting</span> PowerShell, Bash, Python, C++.
-          </li>
-          <li>
-            <span>Monitoring & Observability</span> Prometheus, Grafana, Dynatrace, GCP Cloud Monitoring.
-          </li>
-          <li>
-            <span>Identity Solutions</span> Azure B2C User Flows & Custom Policies, Okta.
-          </li>
-          <li>
-            <span>Others</span> MongoDB, PostgresDB, Sendgrid, Helm, PCI-DSS & SOC2 Compliance.
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h1>Education</h1>
-        <ul>
-          <li>
-            <span>BE Computer Science, Bits Pilani </span> | 2019-2023
-          </li>
-        </ul>
-      </section>
 
-      <section>
-        <h1>Certifications</h1>
-        <ul class="cert-list">
-          <li>
-            <span class="cert-name">🎯 CKA — Certified Kubernetes Administrator</span>
-            <span class="cert-status in-progress">In Progress</span>
-          </li>
-          <li>
-            <span class="cert-name">☁️ Microsoft Azure Fundamentals (AZ-900)</span>
-            <span class="cert-status done">Certified</span>
-          </li>
-          <li>
-            <span class="cert-name">📊 Monitoring with Grafana</span>
-            <span class="cert-status done">Certified</span>
-          </li>
-          <li>
-            <span class="cert-name">⚙️ DevOps Fundamentals</span>
-            <span class="cert-status done">Certified</span>
-          </li>
-        </ul>
-      </section>
+      <div class="home-grid">
+        <section>
+          <h2>Skills</h2>
+          <ul>
+            <li><span>Cloud & Infrastructure</span> Kubernetes, GCP, Azure, AWS, Ansible, Terraform, Istio.</li>
+            <li><span>CI/CD & Containers</span> Jenkins, GitHub Actions, Docker, Helm.</li>
+            <li><span>Languages & Scripting</span> PowerShell, Bash, Python, C++.</li>
+            <li><span>Monitoring & Observability</span> Prometheus, Grafana, Dynatrace, GCP Cloud Monitoring.</li>
+            <li><span>Identity Solutions</span> Azure B2C User Flows & Custom Policies, Okta.</li>
+            <li><span>Compliance & Operations</span> PCI-DSS, SOC2, Troubleshooting, incident response.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h1>Currently</h1>
-        <ul class="currently-list">
-          <li>🎯 Preparing for <strong>CKA</strong> (Certified Kubernetes Administrator)</li>
-          <li>🐍 Levelling up <strong>Python</strong> scripting skills</li>
-          <li>🧱 Strengthening <strong>engineering fundamentals</strong> — going back to basics, deliberately</li>
-          <li>🎸 Learning to play the <strong>Guitar</strong></li>
-        </ul>
-      </section>
+        <section>
+          <h2>Certifications</h2>
+          <ul class="cert-list">
+            <li>
+              <span class="cert-name">🎯 CKA — Certified Kubernetes Administrator</span>
+              <span class="cert-status in-progress">In Progress</span>
+            </li>
+            <li>
+              <span class="cert-name">☁️ Microsoft Azure Fundamentals (AZ-900)</span>
+              <span class="cert-status done">Certified</span>
+            </li>
+            <li>
+              <span class="cert-name">📊 Monitoring with Grafana</span>
+              <span class="cert-status done">Certified</span>
+            </li>
+            <li>
+              <span class="cert-name">⚙️ DevOps Fundamentals</span>
+              <span class="cert-status done">Certified</span>
+            </li>
+          </ul>
+        </section>
 
-      <section>
-        <h1>Beyond the Terminal</h1>
-        <p style="color: #aaa; font-size: 13px; margin-bottom: 12px;">There's more to me than uptime and pipelines.</p>
-        <ul class="hobbies-list">
-          <li>🎬 Movie Buff</li>
-          <li>🏏 Cricket</li>
-          <li>🏸 Badminton</li>
-          <li>🍳 God in the Kitchen</li>
-          <li>📚 Reads &amp; Writes</li>
-        </ul>
-      </section>
+        <section>
+          <h2>Currently</h2>
+          <ul class="currently-list">
+            <li>🎯 Preparing for <strong>CKA</strong> (Certified Kubernetes Administrator)</li>
+            <li>🐍 Advancing <strong>Python</strong> automation capabilities</li>
+            <li>🧱 Strengthening <strong>systems and reliability fundamentals</strong></li>
+            <li>🎸 Learning to play the <strong>guitar</strong></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li><span>BE Computer Science, BITS Pilani</span> | 2019–2023</li>
+          </ul>
+          <h2 class="subsection-heading">Beyond the Terminal</h2>
+          <p class="section-note">I care about people, discipline, and consistency as much as I care about uptime.</p>
+          <ul class="hobbies-list">
+            <li>🎬 Movies</li>
+            <li>🏏 Cricket</li>
+            <li>🏸 Badminton</li>
+            <li>🍳 Cooking</li>
+            <li>📚 Reading & Writing</li>
+          </ul>
+        </section>
+      </div>
     </main>
+
     <hr />
     <footer>
-      <p style="font-style: italic">
-        " SINCERITY | ENDURANCE | RESILIENCE | PERSEVERANCE "
-      </p>
-      <p style="font-size: 12px; color: #444; margin-top: 6px;">© <span class="footer-year">2025</span> Anirudh Madhamshetty</p>
+      <p class="footer-mantra">" SINCERITY | ENDURANCE | RESILIENCE | PERSEVERANCE "</p>
+      <p class="footer-meta">© <span class="footer-year">2025</span> Anirudh Madhamshetty</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
-
